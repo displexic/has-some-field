@@ -2,10 +2,17 @@
 name = "has-some-field"
 description = "Check whether a struct has any field that is_some()"
 version = "0.1.0"
+license = "MIT OR Apache-2.0"
 edition = "2021"
+repository = "https://github.com/displexic/has-some-field"
 
 [lib]
 proc-macro = true
+
+[lints.clippy]
+todo = "deny"
+unimplemented = "deny"
+missing_safety_doc = "deny"
 
 [dependencies]
 proc-macro2 = "1.0.93"
